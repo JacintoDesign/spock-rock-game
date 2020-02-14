@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: dodgerblue;
+  color: white; 
+  font-size: 30px;
+  padding: 50px;
+  margin-top: -10px;
+}
+
+.player-container {
+    margin: 50px; 
+}
+
+h2 {
+    margin-bottom: 20px; 
+}
+
+.far {
+    font-size: 50px;
+    margin-right: 40px; 
+}
+
+#player .far:last-of-type, 
+#computer .far:last-of-type {
+    margin-right: 0;
+}
+
+#player .far, #player .choice {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+#computer .far, #computer .choice {
+    color: rgb(235, 43, 52);
+}
+
+.choice {
+    text-transform: capitalize;
+}
+
+.selected {
+    color: black !important;
+}
+
+.result-container {
+    margin: 0px 50px;
+}
+  
+.reset-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.result-text {
+    font-size: 40px; 
+    margin: unset; 
+    margin-top: 20px; 
+}
+
+@media screen and (max-width: 500px) {
+    * { overflow: hidden; }
+    h1 { font-size: 24px; padding: 50px 0 50px 25px; margin-top: 0; }
+    .player-container { margin: 50px 0 50px 25px; }
+    .result-container { margin: 0 25px; }
+    .far { margin-right: 20px; }
+  }
+  
+  @media screen and (max-width: 376px) {
+    h1 { font-size: 22px; }
+    .player-container { margin: 50px 0 50px 20px; }
+    .result-container { margin: 0 20px; }
+  }
