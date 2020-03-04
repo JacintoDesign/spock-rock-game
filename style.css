@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-* {
-  font-family: Lato, sans-serif;
-  margin: 0;
-  box-sizing: border-box;
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    border: 1px solid rgb(109, 109, 109);
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,.5);
+    border-radius: 5px; 
+    width: 530px;
+    height: 600px;
+}
+
+.header {
+    background-color: dodgerblue;
+    border-bottom: 1px solid rgb(109, 109, 109);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-  background-color: dodgerblue;
-  color: white; 
-  font-size: 30px;
-  padding: 50px;
-  margin-top: -10px;
-}
+    color: white;
+    font-size: 30px;
+} 
 
 .player-container {
     margin: 50px; 
@@ -49,31 +67,39 @@ h2 {
     color: black !important;
 }
 
-.result-container {
-    margin: 0px 50px;
-}
-  
 .reset-icon {
     font-size: 30px;
     cursor: pointer;
+    margin-left: 50px;
 }
 
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
 .result-text {
     font-size: 40px; 
     margin: unset; 
     margin-top: 20px; 
 }
 
-@media screen and (max-width: 500px) {
-    * { overflow: hidden; }
-    h1 { font-size: 24px; padding: 50px 0 50px 25px; margin-top: 0; }
-    .player-container { margin: 50px 0 50px 25px; }
-    .result-container { margin: 0 25px; }
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+    .game-container { width: 95%; height: 580px; }
+    h1 { font-size: 24px; }
+    .player-container { margin: 50px 0 25px 25px; }
     .far { margin-right: 20px; }
-  }
-  
-  @media screen and (max-width: 376px) {
+    .reset-icon { margin-top: 25px; margin-left: 25px; }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+    .game-container { height: 550px; }
     h1 { font-size: 22px; }
-    .player-container { margin: 50px 0 50px 20px; }
+    .player-container { margin: 43px 0 25px 20px; }
+    .far { font-size: 43px; }
+    .reset-icon { margin-top: 15px; }
     .result-container { margin: 0 20px; }
-  }
+}
