@@ -8,19 +8,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
 }
 
 .game-container {
-    border: 1px solid rgb(109, 109, 109);
     box-shadow: 0 10px 20px -5px rgba(0,0,0,.5);
     border-radius: 5px; 
     width: 530px;
     height: 600px;
+    background-color: white;
 }
 
 .header {
     background-color: dodgerblue;
-    border-bottom: 1px solid rgb(109, 109, 109);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     height: 100px;
     display: flex;
     justify-content: center;
