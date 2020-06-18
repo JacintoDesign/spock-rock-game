@@ -5,25 +5,25 @@ html {
 }
 
 body {
-  min-height: 100vh;
   margin: 0;
+  min-height: 100vh;
+  background: whitesmoke;
   font-family: Lato, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
 }
 
 .game-container {
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
   width: 530px;
   height: 600px;
-  background-color: white;
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .header {
-  background-color: dodgerblue;
+  background: dodgerblue;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   height: 100px;
