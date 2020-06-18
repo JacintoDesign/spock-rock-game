@@ -117,7 +117,7 @@ function updateScore(playerChoice) {
   }
 }
 
-// Call functions to process round
+// Call functions to process turn
 function checkResult(playerChoice) {
   resetSelected();
   computerRandomChoice();
