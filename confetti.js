@@ -103,7 +103,7 @@ function runAnimation() {
   }
 }
 
-export function startConfetti(timeout, min, max) {
+function startConfetti(timeout, min, max) {
   var width = window.innerWidth;
   var height = window.innerHeight;
   window.requestAnimationFrame = (function () {
@@ -163,11 +163,11 @@ export function startConfetti(timeout, min, max) {
   }
 }
 
-export function stopConfetti() {
+function stopConfetti() {
   streamingConfetti = false;
 }
 
-export function removeConfetti() {
+function removeConfetti() {
   stop();
   pause = false;
   particles = [];
@@ -229,3 +229,5 @@ function updateParticles() {
     }
   }
 }
+
+export { startConfetti, stopConfetti, removeConfetti };
