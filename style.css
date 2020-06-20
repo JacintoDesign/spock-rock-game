@@ -50,10 +50,6 @@ h2 {
   margin-right: 40px;
 }
 
-.choice {
-  text-transform: capitalize;
-}
-
 #player .far,
 #player .choice {
   color: dodgerblue;
